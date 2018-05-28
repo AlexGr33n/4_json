@@ -11,7 +11,7 @@
 
 ```bash
 
-$ python bars.py alco_shops.json
+$ python pprint_json.py alco_shops.json
 # Пример ответа скрипта
 "type": "Feature"
         },
