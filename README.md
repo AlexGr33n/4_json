@@ -78,6 +78,7 @@ $ python pprint_json.py alco_shops.json
             "type": "Feature"
         },
 
+
 # Цели проекта
 
 Код создан в учебных целях. В рамках учебного курса по веб-разработке - [DEVMAN.org](https://devman.org)
