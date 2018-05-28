@@ -80,7 +80,8 @@ $ python pprint_json.py alco_shops.json
   ],
   "type": "FeatureCollection"
 }
-
+```
+Запуск на Windows происходит аналогично.
 
 # Цели проекта
 
