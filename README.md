@@ -13,70 +13,73 @@
 
 $ python pprint_json.py alco_shops.json
 # Пример ответа скрипта
-"type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    37.81842699961744,
-                    55.750829999765166
-                ],
-                "type": "Point"
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          37.39703804817934,
+          55.740999719549094
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "DatasetId": 1854,
+        "VersionNumber": 1,
+        "ReleaseNumber": 2,
+        "RowId": "79742784-9ef3-4543-bc98-a219a8903c18",
+        "Attributes": {
+          "global_id": 14371450,
+          "Name": "Ароматный Мир",
+          "IsNetObject": "да",
+          "OperatingCompany": "Ароматный Мир",
+          "TypeService": "реализация продовольственных товаров",
+          "AdmArea": "Западный административный округ",
+          "District": "район Кунцево",
+          "Address": "улица Академика Павлова, дом 10",
+          "PublicPhone": [
+            {
+              "PublicPhone": "(495) 777-51-95"
+            }
+          ],
+          "WorkingHours": [
+            {
+              "Hours": "09:30-22:30",
+              "DayOfWeek": "понедельник"
             },
-            "properties": {
-                "Attributes": {
-                    "Address": "Зелёный проспект, дом 60/35",
-                    "AdmArea": "Восточный административный округ",
-                    "ClarificationOfWorkingHours": null,
-                    "District": "район Новогиреево",
-                    "IsNetObject": "нет",
-                    "Name": "МАГАЗИН «РОЗЛИВНОЕ ПИВО»",
-                    "OperatingCompany": null,
-                    "PublicPhone": [
-                        {
-                            "PublicPhone": "(495) 983-09-87"
-                        }
-                    ],
-                    "TypeService": "реализация продовольственных товаров",
-                    "WorkingHours": [
-                        {
-                            "DayOfWeek": "понедельник",
-                            "Hours": "10:00-22:00"
-                        },
-                        {
-                            "DayOfWeek": "вторник",
-                            "Hours": "10:00-22:00"
-                        },
-                        {
-                            "DayOfWeek": "среда",
-                            "Hours": "10:00-22:00"
-                        },
-                        {
-                            "DayOfWeek": "четверг",
-                            "Hours": "10:00-22:00"
-                        },
-                        {
-                            "DayOfWeek": "пятница",
-                            "Hours": "10:00-22:00"
-                        },
-                        {
-                            "DayOfWeek": "суббота",
-                            "Hours": "10:00-22:00"
-                        },
-                        {
-                            "DayOfWeek": "воскресенье",
-                            "Hours": "10:00-22:00"
-                        }
-                    ],
-                    "global_id": 25156884
-                },
-                "DatasetId": 1854,
-                "ReleaseNumber": 2,
-                "RowId": "10082733-a71f-4658-b4bf-8d1d86c30c37",
-                "VersionNumber": 1
+            {
+              "Hours": "09:30-22:30",
+              "DayOfWeek": "вторник"
             },
-            "type": "Feature"
-        },
+            {
+              "Hours": "09:30-22:30",
+              "DayOfWeek": "среда"
+            },
+            {
+              "Hours": "09:30-22:30",
+              "DayOfWeek": "четверг"
+            },
+            {
+              "Hours": "09:30-22:30",
+              "DayOfWeek": "пятница"
+            },
+            {
+              "Hours": "09:30-22:30",
+              "DayOfWeek": "суббота"
+            },
+            {
+              "Hours": "09:30-22:30",
+              "DayOfWeek": "воскресенье"
+            }
+          ],
+          "ClarificationOfWorkingHours": null
+        }
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}
 
 
 # Цели проекта
