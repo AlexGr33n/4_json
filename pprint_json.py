@@ -5,8 +5,8 @@ import argparse
 def load_data(file_path):
     try:
         with open(file_path, encoding='UTF8') as data_file:
-            json_data = json.load(data_file)
-            return json_data
+            file_data = json.load(data_file)
+            return file_data
     except ValueError:
         return None
 
@@ -17,8 +17,8 @@ def create_parser():
     return parser
 
 
-def pretty_print_json(json_data):
-    return json.dumps(json_data, ensure_ascii=False, sort_keys=True, indent=4)
+def pretty_json(file_data):
+    return json.dumps(file_data, ensure_ascii=False, sort_keys=True, indent=4)
 
 
 if __name__ == '__main__':
@@ -27,8 +27,9 @@ if __name__ == '__main__':
         loaded_data = load_data(script_argument.file_path)
         if loaded_data is None:
             error = 'Данные в файле в неправильном формате'
-            raise ValueError(error)
+            exit(error)
     except FileNotFoundError:
         error = '.json файл не найден!'
         raise FileNotFoundError(error)
-    print(pretty_print_json(loaded_data))
+    print(pretty_json(loaded_data))
+
