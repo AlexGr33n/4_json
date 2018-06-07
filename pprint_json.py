@@ -5,8 +5,8 @@ import argparse
 def load_data(file_path):
     try:
         with open(file_path, encoding='UTF8') as data_file:
-            data = json.load(data_file)
-            return data
+            decoded_data = json.load(data_file)
+            return decoded_data
     except ValueError:
         return None
 
@@ -17,10 +17,10 @@ def create_parser():
     return parser
 
 
-def pretty_print_json(data):
+def pretty_print_json(decoded_data):
     return print(
         json.dumps(
-            data,
+            decoded_data,
             ensure_ascii=False,
             sort_keys=True,
             indent=4
