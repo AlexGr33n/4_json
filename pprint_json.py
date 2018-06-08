@@ -18,7 +18,7 @@ def create_parser():
 
 
 def pretty_print_json(decoded_data):
-    return print(
+    print(
         json.dumps(
             decoded_data,
             ensure_ascii=False,
